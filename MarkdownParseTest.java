@@ -27,7 +27,7 @@ public class MarkdownParseTest {
         list[2].add("www.something.com");
 
         for (int i = 0; i < 4; i++) {
-            String file = load("markdown" + (i + 1) + ".md");
+            String file = load("markdown" + (i) + ".md");
             assertEquals(list[i], MarkdownParse.getLinks(file));
         }
     }
