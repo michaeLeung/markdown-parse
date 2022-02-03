@@ -1,10 +1,11 @@
 import static org.junit.Assert.*;
+
+
 import org.junit.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-
 
 public class MarkdownParseTest {
     @Test
@@ -25,11 +26,10 @@ public class MarkdownParseTest {
         list[1].add("some-page.html");
         list[2].add("www.something.com");
         list[2].add("www.something.com");
-        
 
         for (int i = 0; i < 4; i++) {
-            String file = load("markdown" + (i+1) + ".md");
-            assertEquals(list[i], MarkdownParse.getLinks(file));
+            String file = load("markdown" + (i + 1) + ".md");
+            assertEquals(list[i],MarkdownParse.getLinks(file));
         }
     }
 
