@@ -25,7 +25,6 @@ public class MarkdownParseTest {
         list[1].add("some-page.html");
         list[2].add("www.something.com");
         list[2].add("www.something.com");
-        list[3].add("");
         
 
         for (int i = 0; i < 4; i++) {
