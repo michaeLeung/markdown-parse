@@ -31,8 +31,10 @@ public class MarkdownParseTest {
             String file = load("markdown" + (i + 1) + ".md");
             assertEquals(list[i],MarkdownParse.getLinks(file));
         }
+        assertEquals(list[3], MarkdownParse.getLinks(""));
+
     }
-    
+
 
     private String load(String words) throws IOException {
 		Path fileName = Path.of(words);
